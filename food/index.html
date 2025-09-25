@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar bg-light navbar-light py-3 shadow-lg position-relative">
+      <div class="container d-flex align-items-center">
+        <a
+          href="../"
+          class="btn btn-md px-3 rounded-pill text-white fw-medium fst-italic me-3"
+          style="background-color: #71db4b"
+        >
+          HOME
+        </a>
+
+        <a href="#" class="navbar-brand fw-bold fs-4 green">
+          RAFI AQILA MAULANA
+        </a>
+
+        <button
+          class="btnmenu"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="icon">
+            <svg viewBox="0 0 175 80" width="40" height="40">
+              <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+              <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+              <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+            </svg>
+          </span>
+          <span class="text">MENU</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="../profile/" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="../hometown/" class="nav-link">Hometown</a>
+            </li>
+            <li class="nav-item">
+              <a href="../food/" class="nav-link">Food</a>
+            </li>
+            <li class="nav-item">
+              <a href="../tourist/" class="nav-link">Tourist</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Food Section -->
+    <section class="container my-5">
+      <div class="row g-4 justify-content-center">
+        <!-- Nasi Lodho -->
+        <div class="col-md-4">
+          <div class="card my-3">
+            <div class="bg"></div>
+            <div class="blob"></div>
+            <img src="../images/lodho.jpeg" alt="Nasi Lodho" class="card-img my-3" />
+            <p class="card-title">
+              <strong>Nasi Lodho</strong><br />
+              A traditional dish made of smoked chicken cooked with coconut milk and
+              spices, served with rice and vegetables. The smoky flavor makes it
+              unique to Trenggalek.
+            </p>
+            <a
+              href="https://pesonawisata.trenggalekkab.go.id/culinaries/ayam-lodho-pak-yusuf"
+              target="_blank"
+            >
+              <button class="morebtn my-3">More!</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Alen-Alen -->
+        <div class="col-md-4">
+          <div class="card my-3">
+            <div class="bg"></div>
+            <div class="blob"></div>
+            <img src="../images/alen.jpeg" alt="Alen-Alen" class="card-img my-3" />
+            <p class="card-title">
+              <strong>Alen-Alen</strong><br />
+              A crunchy ring-shaped snack made from tapioca flour and spices, often
+              enjoyed as a light bite or gift to bring home from Trenggalek.
+            </p>
+            <a
+              href="https://pesonawisata.trenggalekkab.go.id/shops/oleh-oleh-khas-trenggalek-mbak-siti"
+              target="_blank"
+            >
+              <button class="morebtn my-3">More!</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sego Gegog -->
+        <div class="col-md-4">
+          <div class="card my-3">
+            <div class="bg"></div>
+            <div class="blob"></div>
+            <img src="../images/gegog.jpg" alt="Sego Gegog" class="card-img my-3" />
+            <p class="card-title">
+              <strong>Sego Gegog</strong><br />
+              A rice dish wrapped in banana leaves and steamed with spicy anchovy
+              sambal. The fragrance from the leaves adds a special taste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

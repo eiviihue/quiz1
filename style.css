@@ -1,0 +1,368 @@
+html {
+  background: url(images/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Make the main content background transparent */
+main {
+  background-color: transparent !important;
+}
+
+/* Make the navbar slightly transparent if you want to see background through it */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9) !important; /* 90% opaque white */
+}
+
+/* Ensure body doesn't have any background */
+body {
+  background-color: transparent !important;
+}
+
+.green {
+  color: #71db4b !important; /* Pick any green color you like */
+}
+
+/* From Uiverse.io by gagan-gv */
+.btnmenu {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #71db4b;
+  color: #f5f5f5;
+}
+
+.btnmenu:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btnmenu .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.btnmenu .text {
+  transform: translateX(55px);
+}
+
+.btnmenu:hover .icon {
+  width: 175px;
+}
+
+.btnmenu:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.btnmenu:focus {
+  outline: none;
+}
+
+.btnmenu:active .icon {
+  transform: scale(0.85);
+}
+
+.navbar-collapse.collapse {
+  display: none !important;
+}
+.navbar-collapse.show {
+  display: block !important;
+}
+
+/* Custom dropdown-style box */
+#navmenu {
+  position: absolute;
+  top: 100%; /* right under navbar */
+  right: 2rem; /* align to right near button */
+  background: white;
+  border: 2px solid #71db4b;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  z-index: 1050;
+}
+
+#navmenu .nav-link {
+  text-align: left;
+  padding: 0.5rem 0;
+  color: #333;
+}
+
+#navmenu .nav-link:hover {
+  color: #71db4b;
+  font-weight: bold;
+}
+
+/* From Uiverse.io by dylanharriscameron */
+.card {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 14px;
+  z-index: 2;
+  overflow: hidden;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.bg {
+  position: absolute;
+  inset: 5px; /* replaces fixed width/height with full stretch */
+  z-index: 0;
+  max-width: fit-content;
+  max-height: fit-content;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+
+.blob {
+  position: absolute;
+  z-index: 1; /* stays below image & text, but above card background */
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #71db4b;
+  opacity: 0.6; /* make it softer */
+  filter: blur(20px); /* more glow effect */
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+.card-img {
+  position: relative;
+  z-index: 3; /* Above the background and blob */
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain; /* Keeps image proportion */
+  border-radius: 10px;
+}
+
+.card-title {
+  position: relative;
+  z-index: 3;
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  width: 90%;
+  height: 90%;
+  text-align: center; /* center text (or left if you prefer) */
+  background: rgba(255, 255, 255, 0.8); /* soft background for text */
+  border-radius: 10px;
+}
+
+/* From Uiverse.io by david-mohseni */
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #202021;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+.pic-ctn {
+  position: relative;
+  width: 900px; /* Carousel size */
+  height: 450px;
+  margin: 40px auto; /* <-- centers it horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.2); /* subtle background */
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* <-- make image fill container */
+  height: 100%; /* <-- make image fill container */
+  object-fit: cover; /* <-- crop nicely instead of stretching */
+  border-radius: 15px;
+  opacity: 0;
+  animation: display 12s infinite;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn img:nth-child(2) {
+  animation-delay: 3s;
+}
+.pic-ctn img:nth-child(3) {
+  animation-delay: 6s;
+}
+.pic-ctn img:nth-child(4) {
+  animation-delay: 9s;
+}
+
+/* From Uiverse.io by xueyuantan */ 
+.morebtn {
+ width: 9em;
+ height: 3em;
+ border-radius: 30em;
+ font-size: 15px;
+ font-family: inherit;
+ border: none;
+ position: relative;
+ overflow: hidden;
+ z-index: 1;
+ box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+
+.morebtn::before {
+ content: '';
+ width: 0;
+ height: 3em;
+ border-radius: 30em;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+.morebtn:hover::before {
+ width: 9em;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-light navbar-light py-3 shadow-lg position-relative">
+      <div class="container d-flex align-items-center">
+        <a
+          href="../"
+          class="btn btn-md px-3 rounded-pill text-white fw-medium fst-italic me-3"
+          style="background-color: #71db4b"
+        >
+          HOME
+        </a>
+
+        <a href="#" class="navbar-brand fw-bold fs-4 green">
+          RAFI AQILA MAULANA
+        </a>
+
+        <!-- MENU Button -->
+        <button
+          class="btnmenu"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="icon">
+            <svg viewBox="0 0 175 80" width="40" height="40">
+              <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+              <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+              <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+            </svg>
+          </span>
+          <span class="text">MENU</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="../profile/" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="../hometown/" class="nav-link">Hometown</a>
+            </li>
+            <li class="nav-item">
+              <a href="../food/" class="nav-link">Food</a>
+            </li>
+            <li class="nav-item">
+              <a href="../tourist/" class="nav-link">Tourist</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem"
+    >
+      <!-- Goa Lowo -->
+      <div class="card my-5">
+        <div class="bg"></div>
+        <div class="blob"></div>
+        <img src="../images/guolowo.jpg" alt="Goa Lowo" class="card-img my-5" />
+        <p class="card-title">
+          🦇 <strong>Goa Lowo</strong><br />
+          Known as the largest natural bat cave in Southeast Asia, Goa Lowo is a
+          must-visit for adventurers who want to explore Trenggalek’s mysterious
+          underground world.
+        </p>
+        <a
+          href="https://pesonawisata.trenggalekkab.go.id/attractions/goa-lowo"
+          target="_blank"
+        >
+          <button class="morebtn my-3">More!</button>
+        </a>
+      </div>
+
+      <!-- Pantai Pasir Putih -->
+      <div class="card my-5">
+        <div class="bg"></div>
+        <div class="blob"></div>
+        <img
+          src="../images/pasirputih.jpg"
+          alt="Pantai Pasir Putih"
+          class="card-img my-5"
+        />
+        <p class="card-title">
+          🌊 <strong>Pantai Pasir Putih</strong><br />
+          Famous for its soft white sand and calm waves, this beach is perfect
+          for a relaxing day while enjoying the beautiful ocean scenery.
+        </p>
+        <a
+          href="https://pesonawisata.trenggalekkab.go.id/attractions/pantai-pasir-putih-karanggongso"
+          target="_blank"
+        >
+          <button class="morebtn my-3">More!</button>
+        </a>
+      </div>
+
+      <!-- Ngerit Stone Park -->
+      <div class="card my-5">
+        <div class="bg"></div>
+        <div class="blob"></div>
+        <img
+          src="../images/ngerit.jpg"
+          alt="Ngerit Stone Park"
+          class="card-img my-5"
+        />
+        <p class="card-title">
+          🏞️ <strong>Ngerit Stone Park</strong><br />
+          A natural park with stunning stone formations and panoramic views,
+          ideal for photography and outdoor picnics with friends and family.
+        </p>
+        <a
+          href="https://pesonawisata.trenggalekkab.go.id/attractions/ngerit-stone-park"
+          target="_blank"
+        >
+          <button class="morebtn my-3">More!</button>
+        </a>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
